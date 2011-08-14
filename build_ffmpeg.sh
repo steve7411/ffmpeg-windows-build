@@ -38,8 +38,8 @@
 ./get_source.sh
 
 echo Building ffmpeg x86 and x64.  This could take a few hours...
-./build_x86.sh > x86.log &
-./build_x64.sh > x64.log &
+(./build_x86.sh &> x86.log) &
+(./build_x64.sh &> x64.log) &
 wait
 
 echo Done building ffmpeg x86 and x64
