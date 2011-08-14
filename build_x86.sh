@@ -1,3 +1,4 @@
+#!/bin/sh
 MY_BUILD=${HOME}/build
 MY_X86=${MY_BUILD}/x86
 
