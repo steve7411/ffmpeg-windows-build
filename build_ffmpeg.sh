@@ -37,9 +37,10 @@
 
 ./get_source.sh
 
-echo Building ffmpeg x86 and x64.  This could take a few hours...
+echo `date` - Building ffmpeg x86 and x64.  This could take a few hours...
+./common_libraries.sh &> common.log
 (./build_x86.sh &> x86.log) &
 (./build_x64.sh &> x64.log) &
 wait
 
-echo Done building ffmpeg x86 and x64
+echo `date` - Done building ffmpeg x86 and x64
