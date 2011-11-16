@@ -63,6 +63,11 @@ cd ${MY_X86}/speex-*
 ./configure --prefix=/mingw/i686-pc-mingw32 --disable-shared --enable-sse
 make clean && make && make install-strip
 
+#Compiling lamemp3
+cd &{MY_X86}/lame-*
+./configure --prefix=/mingw/i686-pc-mingw32 --disable-shared
+make clean && make && make install-strip
+
 #Compiling openjpeg
 # note:
 # Compiling openjpeg is weird.
